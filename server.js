@@ -6,6 +6,8 @@ app.get('/hello', (req, res) => {
     res.json({'msg' : 'hello you all'})
 });
 
-app.listen(8080, () =>{
+const port = process.env.PORT || 8080;
+
+app.listen(port, () =>{
     console.log('server is ready!')
 });
